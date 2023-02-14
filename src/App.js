@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <PetsContainer pets={pets} />
-      <NewPet />
+      <NewPet setPets={setPets} />
     </div>
   );
 }
