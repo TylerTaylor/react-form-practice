@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const NewPet = () => {
 
   // TODO 1. Create state to hold your form data, whether individual states (name, species) or an object ({ name: '', species: '' })
+  const [formData, setFormData] = useState({
+    name: '',
+    species: ''
+  })
+
+  // or
+  // const [name, setName] = useState('')
+  // const [species, setSpecies] = useState('')
 
   // TODO 2. Wire up your input elements - when you type in the input, it needs to trigger a function to set your state. Remember to add a `value` property that lines up with your state.
 
